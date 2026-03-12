@@ -1,50 +1,23 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual Environment
+*.pyc
+*.pyo
 venv/
-env/
 .env
-
-# Jupyter Notebooks
-.ipynb_checkpoints
-
-# ML Data & Models (Do not commit large datasets or model weights)
-ml/data/raw/*
-ml/data/processed/*
+ 
+# ML Models (too large for git)
+ml/saved_models/*.pth
+ml/saved_models/*.onnx
 ml/models/*.pth
-ml/models/*.h5
-ml/models/*.pt
-!ml/data/raw/.gitkeep
-!ml/data/processed/.gitkeep
-!ml/models/.gitkeep
-
-# IDEs / Text Editors
+ml/models/*.onnx
+ml/data/raw/
+ml/data/processed/
+ 
+# Frontend
+node_modules/
+frontend/build/
+ 
+# IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# Environment variables
-.env
-.flaskenv
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# FastAPI / Pytest caching
-.pytest_cache/
-htmlcov/
-.coverage
-.coverage.*
-.tox/
-.mypy_cache/
-.ruff_cache/
+*.DS_Store

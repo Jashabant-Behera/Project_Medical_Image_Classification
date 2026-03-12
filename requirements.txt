@@ -1,0 +1,47 @@
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pydantic-settings
+
+# Deep Learning (CPU build — replace with GPU build if you have CUDA)
+torch
+torchvision
+
+# Image Processing
+Pillow
+opencv-python-headless
+albumentations
+matplotlib
+seaborn
+
+# Grad-CAM
+grad-cam
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+
+# ML Utilities
+scikit-learn
+numpy
+pandas
+tqdm
+jupyter
+ipykernel
+
+# AWS S3 (optional)
+boto3
+python-dotenv
+
+# Testing
+pytest
+httpx
+pytest-asyncio
+
+# Code Quality
+black
+flake8
+isort
