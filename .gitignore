@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# ML Data & Models (Do not commit large datasets or model weights)
+ml/data/raw/*
+ml/data/processed/*
+ml/models/*.pth
+ml/models/*.h5
+ml/models/*.pt
+!ml/data/raw/.gitkeep
+!ml/data/processed/.gitkeep
+!ml/models/.gitkeep
+
+# IDEs / Text Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.flaskenv
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# FastAPI / Pytest caching
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+.tox/
+.mypy_cache/
+.ruff_cache/
