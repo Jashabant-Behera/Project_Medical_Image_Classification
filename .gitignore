@@ -4,7 +4,12 @@ __pycache__/
 *.pyo
 venv/
 .env
- 
+
+# Testing cache
+.pytest_cache/
+htmlcov/
+.coverage
+
 # ML Models (too large for git)
 ml/saved_models/*.pth
 ml/saved_models/*.onnx
@@ -12,18 +17,25 @@ ml/models/*.pth
 ml/models/*.onnx
 ml/data/raw/
 ml/data/processed/
- 
+
 # Frontend
 node_modules/
 frontend/node_modules/
 frontend/build/
 frontend/dist/
- 
+frontend/package-lock.json
+
 # Databases and Logs
 *.sqlite
 *.log
- 
+
+# Alembic local DB
+backend/chest_xray_db.sqlite
+
 # IDE
 .vscode/
 .idea/
 *.DS_Store
+
+# OS
+Thumbs.db
