@@ -1,67 +1,66 @@
--#- -P-h-a-s-e- -0- -V-e-r-i-f-i-c-a-t-i-o-n- -R-e-p-o-r-t-
-- -
--#-#- -D-e-t-a-i-l-e-d- -S-t-a-t-u-s- -o-f- -P-r-e-r-e-q-u-i-s-i-t-e-s- -a-n-d- -S-e-t-u-p-
-- -
--T-h-i-s- -d-o-c-u-m-e-n-t- -o-u-t-l-i-n-e-s- -t-h-e- -e-v-a-l-u-a-t-i-o-n- -o-f- -y-o-u-r- -l-o-c-a-l- -s-y-s-t-e-m- -a-g-a-i-n-s-t- -t-h-e- -"-P-h-a-s-e- -0- -S-y-s-t-e-m- -P-r-e-r-e-q-u-i-s-i-t-e-s-"- -r-e-q-u-i-r-e-m-e-n-t-s- -f-o-r- -t-h-e- -*-*-C-h-e-s-t- -X---R-a-y- -M-e-d-i-c-a-l- -I-m-a-g-e- -C-l-a-s-s-i-f-i-c-a-t-i-o-n-*-*- -p-r-o-j-e-c-t-.-
-- -
--#-#-#- -1-.- -P-r-e---I-n-s-t-a-l-l-e-d- -E-n-v-i-r-o-n-m-e-n-t- -T-o-o-l-s- -(-A-l-r-e-a-d-y- -o-n- -S-y-s-t-e-m-)- -
--B-a-s-e-d- -o-n- -s-y-s-t-e-m- -c-h-e-c-k-s-,- -t-h-e- -f-o-l-l-o-w-i-n-g- -t-o-o-l-s- -e-x-i-s-t- -o-n- -y-o-u-r- -m-a-c-h-i-n-e- -(-W-i-n-d-o-w-s-)- -a-n-d- -*-*-d-o- -n-o-t-*-*- -n-e-e-d- -t-o- -b-e- -r-e-i-n-s-t-a-l-l-e-d-:-
-- -
--|- -T-o-o-l- -|- -I-n-s-t-a-l-l-e-d- -V-e-r-s-i-o-n- -|- -S-t-a-t-u-s- -|- -N-o-t-e-s- -|-
--|- -:------- -|- -:------- -|- -:------- -|- -:------- -|-
--|- -*-*-O-p-e-r-a-t-i-n-g- -S-y-s-t-e-m-*-*- -|- -W-i-n-d-o-w-s- -|- - -V-a-l-i-d- -|- -M-a-k-e- -s-u-r-e- -W-S-L-2- -i-s- -c-o-n-f-i-g-u-r-e-d- -i-f- -y-o-u- -h-e-a-v-i-l-y- -r-e-l-y- -o-n- -U-n-i-x- -c-o-m-m-a-n-d-s-,- -b-u-t- -n-a-t-i-v-e-l-y- -w-o-r-k-s- -w-i-t-h- -P-o-w-e-r-S-h-e-l-l-.- -|-
--|- -*-*-P-y-t-h-o-n-*-*- -|- -3-.-1-3-.-5- -|- - -V-a-l-i-d- -|- -E-x-c-e-e-d-s- -t-h-e- -3-.-1-0- -r-e-q-u-i-r-e-m-e-n-t-.- -|-
--|- -*-*-G-i-t-*-*- -|- -2-.-4-7-.-0-.-w-i-n-d-o-w-s-.-1- -|- - -V-a-l-i-d- -|- -E-x-c-e-l-l-e-n-t-.- -|-
--|- -*-*-D-o-c-k-e-r- -/- -C-o-m-p-o-s-e-*-*- -|- -2-9-.-2-.-1- -|- - -V-a-l-i-d- -|- -D-o-c-k-e-r- -D-e-s-k-t-o-p- -i-s- -u-p- -a-n-d- -r-u-n-n-i-n-g-.- -|-
--|- -*-*-N-o-d-e-.-j-s-*-*- -|- -v-2-2-.-1-3-.-1- -|- - -V-a-l-i-d- -|- -E-x-c-e-e-d-s- -t-h-e- -v-1-8-+- -r-e-q-u-i-r-e-m-e-n-t-.- -|-
--|- -*-*-n-p-m-*-*- -|- -1-1-.-0-.-0- -|- - -V-a-l-i-d- -|- -R-e-a-d-y- -f-o-r- -f-r-o-n-t-e-n-d- -d-e-p-e-n-d-e-n-c-i-e-s-.- -|-
-- -
--#-#-#- -2-.- -M-i-s-s-i-n-g- -T-o-o-l-s- -(-N-e-e-d-s- -A-t-t-e-n-t-i-o-n-)- -️-
-- -
--|- -T-o-o-l- -|- -S-t-a-t-u-s- -|- -A-c-t-i-o-n- -R-e-q-u-i-r-e-d- -|-
--|- -:------- -|- -:------- -|- -:------- -|-
--|- -*-*-C-U-D-A- -T-o-o-l-k-i-t- -(-`-n-v-c-c-`-)-*-*- -|- - -N-o-t- -D-e-t-e-c-t-e-d- -|- -I-f- -y-o-u- -h-a-v-e- -a-n- -N-V-I-D-I-A- -G-P-U-,- -y-o-u- -n-e-e-d- -t-o- -d-o-w-n-l-o-a-d- -a-n-d- -i-n-s-t-a-l-l- -C-U-D-A- -1-1-.-8-.- -I-f- -y-o-u- -a-r-e- -t-r-a-i-n-i-n-g- -o-n-l-y- -o-n- -C-P-U-,- -y-o-u- -c-a-n- -*-*-i-g-n-o-r-e- -t-h-i-s- -e-n-t-i-r-e-l-y-*-*-.- -|-
-- -
--------
-- -
--#-#-#- -3-.- -P-r-o-j-e-c-t- -I-n-i-t-i-a-l-i-z-a-t-i-o-n- -C-o-m-p-l-e-t-e-d- -(-D-o-n-e- -B-y- -A-s-s-i-s-t-a-n-t-)- -
--T-h-e- -i-n-t-e-r-n-a-l- -s-t-r-u-c-t-u-r-e- -a-n-d- -c-o-n-f-i-g-u-r-a-t-i-o-n-s- -h-o-l-d- -e-v-e-r-y-t-h-i-n-g- -o-u-t-l-i-n-e-d- -i-n- -P-h-a-s-e- -0-:-
-- -
---- -[-x-]- -*-*-F-o-l-d-e-r- -S-t-r-u-c-t-u-r-e-:-*-*- -D-i-r-e-c-t-o-r-y- -t-r-e-e- -c-o-n-f-i-g-u-r-e-d- -(-e-.-g-.-,- -`-b-a-c-k-e-n-d-/-`-,- -`-m-l-/-`-,- -`-f-r-o-n-t-e-n-d-/-`-,- -`-d-o-c-k-e-r-/-`-,- -e-t-c-.-)-.- -
---- -[-x-]- -*-*-G-i-t- -R-e-p-o-s-i-t-o-r-y-:-*-*- -I-n-i-t-i-a-l-i-z-e-d- -a-n-d- -`-.-g-i-t-i-g-n-o-r-e-`- -f-i-l-e- -c-o-r-r-e-c-t-l-y- -a-p-p-l-i-e-d-.-
---- -[-x-]- -*-*-V-i-r-t-u-a-l- -E-n-v-i-r-o-n-m-e-n-t-:-*-*- -P-y-t-h-o-n- -`-v-e-n-v-`- -c-r-e-a-t-e-d- -i-n- -t-h-e- -r-o-o-t- -d-i-r-e-c-t-o-r-y-.-
---- -[-x-]- -*-*-D-e-p-e-n-d-e-n-c-i-e-s- -M-a-p-p-i-n-g-:-*-*- -`-r-e-q-u-i-r-e-m-e-n-t-s-.-t-x-t-`- -f-i-l-e- -i-s- -p-l-a-c-e-d- -i-n- -r-o-o-t- -w-i-t-h- -p-i-n-n-e-d- -v-e-r-s-i-o-n-s-.-
---- -[-x-]- -*-*-E-n-v-i-r-o-n-m-e-n-t- -V-a-r-i-a-b-l-e-s-:-*-*- -`-.-e-n-v-`- -a-n-d- -`-.-e-n-v-.-e-x-a-m-p-l-e-`- -t-e-m-p-l-a-t-e-s- -c-r-e-a-t-e-d- -f-o-r- -c-o-n-f-i-g-s- -(-D-B-,- -M-o-d-e-l- -p-a-t-h-,- -A-P-I- -K-e-y-s-)-.-
-- -
--------
-- -
--#-#-#- -4-.- -D-e-p-e-n-d-e-n-c-i-e-s- -t-o- -I-n-s-t-a-l-l- -(-`-p-i-p- -i-n-s-t-a-l-l-`-)- -
--Y-o-u- -h-a-v-e- -*-n-o-t-*- -y-e-t- -i-n-s-t-a-l-l-e-d- -t-h-e- -P-y-t-h-o-n- -p-a-c-k-a-g-e-s- -i-n-t-o- -y-o-u-r- -`-v-e-n-v-`- -(-a-s- -p-e-r- -y-o-u-r- -i-n-s-t-r-u-c-t-i-o-n- -t-o- -n-o-t- -i-n-s-t-a-l-l- -a-n-y-t-h-i-n-g- -w-i-t-h-o-u-t- -a-s-k-i-n-g-)-.- -W-h-e-n- -y-o-u- -a-r-e- -r-e-a-d-y-,- -h-e-r-e- -a-r-e- -t-h-e- -p-a-c-k-a-g-e-s- -m-a-p-p-e-d- -o-u-t- -b-y- -s-i-z-e-,- -s-o- -y-o-u- -k-n-o-w- -e-x-a-c-t-l-y- -w-h-a-t- -n-e-t-w-o-r-k- -l-o-a-d- -t-o- -e-x-p-e-c-t- -t-o- -r-u-n- -t-h-e- -p-r-o-j-e-c-t-.-
--
--*-*-E-s-t-i-m-a-t-e-d- -D-o-w-n-l-o-a-d- -S-u-m-m-a-r-y-:-*-*- -
--*- -*-*-I-f- -r-u-n-n-i-n-g- -C-P-U- -o-n-l-y-:-*-*- -~-4-0-0- -M-B- -t-o- -~-5-0-0- -M-B-.-
--*- -*-*-I-f- -i-n-s-t-a-l-l-i-n-g- -P-y-T-o-r-c-h- -w-i-t-h- -C-U-D-A- -(-G-P-U-)-:-*-*- -~-2-.-5- -G-B- -t-o- -~-3-.-0- -G-B-.-
-- -
--*-*-D-e-t-a-i-l-e-d- -S-i-z-e- -B-r-e-a-k-d-o-w-n- -f-o-r- -P-a-c-k-a-g-e-s- -i-n- -`-r-e-q-u-i-r-e-m-e-n-t-s-.-t-x-t-`-:-*-*-
-- -
--|- -C-a-t-e-g-o-r-y- -|- -M-a-i-n- -P-a-c-k-a-g-e-s- -|- -E-s-t-.- -D-o-w-n-l-o-a-d- -S-i-z-e- -|- -P-u-r-p-o-s-e- -|-
--|- -:------- -|- -:------- -|- -:------- -|- -:------- -|-
--|- -*-*-D-e-e-p- -L-e-a-r-n-i-n-g- -(-C-P-U-)-*-*- -|- -`-t-o-r-c-h-`- -(-2-.-3-.-0-)-,- -`-t-o-r-c-h-v-i-s-i-o-n-`- -(-0-.-1-8-.-0-)- -|- -*-*-~-2-5-0- -M-B-*-*- -|- -C-o-r-e- -m-a-c-h-i-n-e- -l-e-a-r-n-i-n-g- -m-o-d-e-l-s- -|-
--|- -*-(-O-p-t-i-o-n-a-l- -D-L- -G-P-U-)-*- -|- -`-t-o-r-c-h-`- -+- -`-c-u-1-1-8-`- -b-a-c-k-e-n-d- -|- -*-(-v-a-r-i-e-s-,- -~-2-.-5- -G-B-)-*- -|- -A-c-c-e-l-e-r-a-t-e-d- -G-P-U- -t-e-n-s-o-r- -p-r-o-c-e-s-s-i-n-g- -|-
--|- -*-*-I-m-a-g-e- -P-r-o-c-e-s-s-i-n-g-*-*- -|- -`-o-p-e-n-c-v---p-y-t-h-o-n---h-e-a-d-l-e-s-s-`-,- -`-a-l-b-u-m-e-n-t-a-t-i-o-n-s-`-,- -`-P-i-l-l-o-w-`- -|- -*-*-~-5-0- -M-B-*-*- -|- -C-r-o-p-p-i-n-g-,- -r-o-t-a-t-i-n-g-,- -s-t-a-n-d-a-r-d-i-z-i-n-g- -d-a-t-a-s-e-t-s- -|-
--|- -*-*-D-a-t-a- -U-t-i-l-i-t-i-e-s-*-*- -|- -`-n-u-m-p-y-`-,- -`-p-a-n-d-a-s-`-,- -`-s-c-i-k-i-t---l-e-a-r-n-`- -|- -*-*-~-6-5- -M-B-*-*- -|- -M-a-t-r-i-c-e-s-,- -e-v-a-l-u-a-t-i-o-n- -m-e-t-r-i-c-s- -(-R-O-C-,- -C-o-n-f-u-s-i-o-n- -M-a-t-r-i-c-e-s-)- -|-
--|- -*-*-W-e-b- -A-P-I-*-*- -|- -`-f-a-s-t-a-p-i-`-,- -`-u-v-i-c-o-r-n-`-,- -`-p-y-d-a-n-t-i-c-`- -|- -*-*-~-2-0- -M-B-*-*- -|- -H-i-g-h---p-e-r-f-o-r-m-a-n-c-e- -b-a-c-k-e-n-d- -r-o-u-t-i-n-g- -|-
--|- -*-*-D-a-t-a-b-a-s-e- -O-R-M-*-*- -|- -`-s-q-l-a-l-c-h-e-m-y-`-,- -`-a-l-e-m-b-i-c-`-,- -`-p-s-y-c-o-p-g-2---b-i-n-a-r-y-`- -|- -*-*-~-1-0- -M-B-*-*- -|- -R-e-c-o-r-d-i-n-g- -p-r-e-d-i-c-t-i-o-n-s- -t-o- -P-o-s-t-g-r-e-S-Q-L- -|-
--|- -*-*-J-u-p-y-t-e-r-/-T-e-s-t-i-n-g-*-*- -|- -`-j-u-p-y-t-e-r-`-,- -`-p-y-t-e-s-t-`-,- -`-m-a-t-p-l-o-t-l-i-b-`-,- -`-s-e-a-b-o-r-n-`- -|- -*-*-~-5-0- -M-B-*-*- -|- -E-D-A-,- -v-i-s-u-a-l-i-z-a-t-i-o-n-s-,- -U-n-i-t- -T-e-s-t-i-n-g- -|-
--|- -*-*-C-o-d-e- -Q-u-a-l-i-t-y- -/- -A-W-S-*-*-|- -`-b-l-a-c-k-`-,- -`-f-l-a-k-e-8-`-,- -`-i-s-o-r-t-`-,- -`-b-o-t-o-3-`- -|- -*-*-~-4-0- -M-B-*-*- -|- -L-i-n-t-e-l-,- -F-o-r-m-a-t-t-i-n-g-,- -S-3- -C-l-o-u-d- -u-p-l-o-a-d-s- -|-
--
--#-#-#- -N-e-x-t- -S-t-e-p-s-:-
--W-h-e-n- -y-o-u- -a-r-e- -r-e-a-d-y- -t-o- -p-r-o-c-e-e-d-,- -a-c-t-i-v-a-t-e- -y-o-u-r- -v-i-r-t-u-a-l- -e-n-v-i-r-o-n-m-e-n-t-:-
--`-`-`-p-o-w-e-r-s-h-e-l-l-
--.-\-v-e-n-v-\-S-c-r-i-p-t-s-\-A-c-t-i-v-a-t-e-.-p-s-1-
--`-`-`-
--A-n-d- -e-x-e-c-u-t-e- -t-h-i-s- -t-o- -p-u-l-l- -d-o-w-n- -t-h-e- -r-e-q-u-i-r-e-d- -s-i-z-e-:-
--`-`-`-p-o-w-e-r-s-h-e-l-l-
--p-i-p- -i-n-s-t-a-l-l- ---r- -r-e-q-u-i-r-e-m-e-n-t-s-.-t-x-t-
--`-`-`-
--
+# Phase 0 Verification Report
+ 
+## Detailed Status of Prerequisites and Setup
+ 
+This document outlines the evaluation of your local system against the "Phase 0 System Prerequisites" requirements for the **Chest X-Ray Medical Image Classification** project.
+ 
+### 1. Pre-Installed Environment Tools (Already on System) 
+Based on system checks, the following tools exist on your machine (Windows) and **do not** need to be reinstalled:
+ 
+| Tool | Installed Version | Status | Notes |
+| :--- | :--- | :--- | :--- |
+| **Operating System** | Windows |  Valid | Make sure WSL2 is configured if you heavily rely on Unix commands, but natively works with PowerShell. |
+| **Python** | 3.13.5 |  Valid | Exceeds the 3.10 requirement. |
+| **Git** | 2.47.0.windows.1 |  Valid | Excellent. |
+| **Docker / Compose** | 29.2.1 |  Valid | Docker Desktop is up and running. |
+| **Node.js** | v22.13.1 |  Valid | Exceeds the v18+ requirement. |
+| **npm** | 11.0.0 |  Valid | Ready for frontend dependencies. |
+ 
+### 2. Missing Tools (Needs Attention) ️
+ 
+| Tool | Status | Action Required |
+| :--- | :--- | :--- |
+| **CUDA Toolkit (`nvcc`)** |  Not Detected | If you have an NVIDIA GPU, you need to download and install CUDA 11.8. If you are training only on CPU, you can **ignore this entirely**. |
+ 
+---
+ 
+### 3. Project Initialization Completed (Done By Assistant) 
+The internal structure and configurations hold everything outlined in Phase 0:
+ 
+- [x] **Folder Structure:** Directory tree configured (e.g., `backend/`, `ml/`, `frontend/`, `docker/`, etc.). 
+- [x] **Git Repository:** Initialized and `.gitignore` file correctly applied.
+- [x] **Virtual Environment:** Python `venv` created in the root directory.
+- [x] **Dependencies Mapping:** `requirements.txt` file is placed in root with pinned versions.
+- [x] **Environment Variables:** `.env` and `.env.example` templates created for configs (DB, Model path, API Keys).
+ 
+---
+ 
+### 4. Dependencies to Install (`pip install`) 
+You have *not* yet installed the Python packages into your `venv` (as per your instruction to not install anything without asking). When you are ready, here are the packages mapped out by size, so you know exactly what network load to expect to run the project.
+
+**Estimated Download Summary:** 
+* **If running CPU only:** ~400 MB to ~500 MB.
+* **If installing PyTorch with CUDA (GPU):** ~2.5 GB to ~3.0 GB.
+ 
+**Detailed Size Breakdown for Packages in `requirements.txt`:**
+ 
+| Category | Main Packages | Est. Download Size | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Deep Learning (CPU)** | `torch` (2.3.0), `torchvision` (0.18.0) | **~250 MB** | Core machine learning models |
+| *(Optional DL GPU)* | `torch` + `cu118` backend | *(varies, ~2.5 GB)* | Accelerated GPU tensor processing |
+| **Image Processing** | `opencv-python-headless`, `albumentations`, `Pillow` | **~50 MB** | Cropping, rotating, standardizing datasets |
+| **Data Utilities** | `numpy`, `pandas`, `scikit-learn` | **~65 MB** | Matrices, evaluation metrics (ROC, Confusion Matrices) |
+| **Web API** | `fastapi`, `uvicorn`, `pydantic` | **~20 MB** | High-performance backend routing |
+| **Database ORM** | `sqlalchemy`, `alembic`, `psycopg2-binary` | **~10 MB** | Recording predictions to PostgreSQL |
+| **Jupyter/Testing** | `jupyter`, `pytest`, `matplotlib`, `seaborn` | **~50 MB** | EDA, visualizations, Unit Testing |
+| **Code Quality / AWS**| `black`, `flake8`, `isort`, `boto3` | **~40 MB** | Lintel, Formatting, S3 Cloud uploads |
+
+### Next Steps:
+When you are ready to proceed, activate your virtual environment:
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+And execute this to pull down the required size:
+```powershell
+pip install -r requirements.txt
+```
