@@ -39,3 +39,10 @@ backend/chest_xray_db.sqlite
 
 # OS
 Thumbs.db
+
+# Phase & Audit Docs
+Phase0_Report.md
+phase*.md
+code_review.md
+full_code_audit.md
+dataset.md
