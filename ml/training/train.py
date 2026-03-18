@@ -61,7 +61,7 @@ def main(args):
     optimizer = torch.optim.Adam(
         filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode='min', patience=3, factor=0.5, verbose=True)
+        optimizer, mode='min', patience=3, factor=0.5)
  
     best_auc, patience_counter = 0.0, 0
     history = []
@@ -71,7 +71,11 @@ def main(args):
         t0 = time.time()
         train_loss, train_acc = train_epoch(model, train_loader, criterion, optimizer, device)
         val_loss, val_acc, val_auc = eval_epoch(model, val_loader, criterion, device)
+        prev_lr = optimizer.param_groups[0]['lr']
         scheduler.step(val_loss)
+        new_lr = optimizer.param_groups[0]['lr']
+        if new_lr != prev_lr:
+            print(f'  LR reduced: {prev_lr:.2e} → {new_lr:.2e}')
         elapsed = time.time() - t0
  
         print(f'Epoch {epoch:3d}/{args.epochs} | '
@@ -106,6 +110,6 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size',type=int, default=32)
     parser.add_argument('--lr',        type=float, default=1e-4)
     parser.add_argument('--patience',  type=int, default=5)
-    parser.add_argument('--data_dir',  default='ml/data')
+    parser.add_argument('--data_dir',  default='ml/data/processed')
     parser.add_argument('--save_dir',  default='ml/saved_models')
     main(parser.parse_args())

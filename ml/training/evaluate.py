@@ -9,7 +9,7 @@ from ml.training.model import MODEL_REGISTRY
 from ml.training.dataloader import get_dataloaders
  
 def evaluate(model_path: str, model_name: str = 'densenet121',
-             data_dir: str = 'ml/data', report_dir: str = 'ml/reports'):
+             data_dir: str = 'ml/data/processed', report_dir: str = 'ml/reports'):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     os.makedirs(report_dir, exist_ok=True)
  

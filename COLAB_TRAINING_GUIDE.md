@@ -84,11 +84,11 @@ print(f"GPU name: {torch.cuda.get_device_name(0)}")
 
 ```python
 # Only run this if you uploaded the raw dataset images
-!python scripts/create_csv.py
+!python ml/data/create_csv.py
 # Expected output:
-# Created ml/data/train.csv with 5216 rows
-# Created ml/data/val.csv  with 16  rows
-# Created ml/data/test.csv with 624 rows
+# Created ml/data/processed/train.csv with 5216 rows
+# Created ml/data/processed/val.csv  with 16  rows
+# Created ml/data/processed/test.csv with 624 rows
 ```
 
 > **Skip this step** if you already have `ml/data/train.csv`, `val.csv`, `test.csv` — just upload those CSV files directly.
@@ -198,7 +198,7 @@ print(f"CUDA: {torch.cuda.is_available()} | Device: {torch.cuda.get_device_name(
     --lr 0.0001 \
     --batch_size 32 \
     --patience 5 \
-    --data_dir ml/data \
+    --data_dir ml/data/processed \
     --save_dir ml/saved_models
 
 # ── Cell 6: Run evaluation ───────────────────────────────────────────────────
