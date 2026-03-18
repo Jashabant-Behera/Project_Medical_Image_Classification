@@ -3,7 +3,7 @@ from torch.utils.data import DataLoader, WeightedRandomSampler
 from ml.training.dataset import ChestXRayDataset
 from ml.training.augmentations import train_transforms, val_transforms
  
-def get_dataloaders(data_dir: str = 'ml/data', batch_size: int = 32,
+def get_dataloaders(data_dir: str = 'ml/data/processed', batch_size: int = 32,
                     num_workers: int = 4, use_sampler: bool = True):
     train_ds = ChestXRayDataset(f'{data_dir}/train.csv', transform=train_transforms)
     val_ds   = ChestXRayDataset(f'{data_dir}/val.csv',   transform=val_transforms)

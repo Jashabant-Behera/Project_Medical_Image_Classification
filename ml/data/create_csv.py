@@ -1,7 +1,7 @@
 import os, csv, pathlib
 
 DATA_ROOT = 'ml/data/raw'
-OUTPUT_DIR = 'ml/data'
+OUTPUT_DIR = 'ml/data/processed'
 
 def create_csv(split):
     rows = []
